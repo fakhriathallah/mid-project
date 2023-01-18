@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Document</title>
   </head>
   <body>
@@ -18,7 +19,7 @@
       <div class="text">
         <h1>Hi, I'm <span>Fakhri Athallah</span></h1>
         <p>I'm a Front End Developer</p>
-        <a href="">Let's Talk</a>
+        <a href="#footer">Let's Talk</a>
       </div>
     </div>
     <section class="about-us">
@@ -46,31 +47,81 @@
         </div>
       </div>
     </section>
+    <script>
+      ScrollReveal().reveal('.about-left', {
+        delay: 500,
+        distance: '60px',
+        origin: 'left',
+      });
+      ScrollReveal().reveal('.about-right', {
+        delay: 500,
+        distance: '60px',
+        origin: 'right',
+      });
+    </script>
     <section class="about-mobile">
-      <h1>About Me</h1>
-      <img src="images/about-img.png" />
-      <p>
-        Design services I am providing. With best-in-class design and
-        engineering, my work maximizes value by putting your customers at the
-        center of everything I do.
-      </p>
-      <h1>Programming Language</h1>
-      <div class="skill">
-        <div class="skill-card-1">
-          <p>HTML</p>
-        </div>
-        <div class="skill-card-2">
-          <p>CSS</p>
-        </div>
-        <div class="skill-card-3">
-          <p>JAVASCRIPT</p>
+      <div class="about-text">
+        <h1>About Me</h1>
+        <img src="images/about-img.png" />
+        <p>
+          Design services I am providing. With best-in-class design and
+          engineering, my work maximizes value by putting your customers at the
+          center of everything I do.
+        </p>
+      </div>
+      <script>
+        ScrollReveal().reveal('.about-text', {
+          delay: 500,
+          duration: 1000,
+          distance: '60px',
+          origin: 'bottom',
+        });
+      </script>
+      <div class="skill-mobile">
+        <h1 class="skill-text">Programming Language</h1>
+        <div class="skill">
+          <div class="skill-mobile-card-1">
+            <p>HTML</p>
+          </div>
+          <div class="skill-mobile-card-2">
+            <p>CSS</p>
+          </div>
+          <div class="skill-mobile-card-3">
+            <p>JAVASCRIPT</p>
+          </div>
         </div>
       </div>
+      <script>
+        ScrollReveal().reveal('.skill-text', {
+          delay: 500,
+          duration: 1000,
+          distance: '60px',
+          origin: 'left',
+        });
+        ScrollReveal().reveal('.skill-mobile-card-1', {
+          delay: 500,
+          duration: 1000,
+          distance: '60px',
+          origin: 'right',
+        });
+        ScrollReveal().reveal('.skill-mobile-card-2', {
+          delay: 500,
+          duration: 1000,
+          distance: '60px',
+          origin: 'left',
+        });
+        ScrollReveal().reveal('.skill-mobile-card-3', {
+          delay: 500,
+          duration: 1000,
+          distance: '60px',
+          origin: 'right',
+        });
+      </script>
       <table></table>
     </section>
 
     <section class="portfolio">
-      <h3>Portfolio</h3>
+      <h3 class="portfolio-text">Portfolio</h3>
       <div class="portfolio-card">
         <div class="portfolio-left">
           <div class="card-1">
@@ -100,10 +151,42 @@
           </div>
         </div>
       </div>
+      <script>
+        ScrollReveal().reveal('.portfolio-text', {
+          delay: 300,
+          duration: 1000,
+          distance: '60px',
+          origin: 'right',
+        });
+        ScrollReveal().reveal('.card-1', {
+          delay: 400,
+          duration: 1000,
+          distance: '60px',
+          origin: 'left',
+        });
+        ScrollReveal().reveal('.card-3', {
+          delay: 500,
+          duration: 1000,
+          distance: '60px',
+          origin: 'right',
+        });
+        ScrollReveal().reveal('.card-2', {
+          delay: 600,
+          duration: 1000,
+          distance: '60px',
+          origin: 'left',
+        });
+        ScrollReveal().reveal('.card-4', {
+          delay: 700,
+          duration: 1000,
+          distance: '60px',
+          origin: 'right',
+        });
+      </script>
     </section>
 
     <section class="portfolio-mobile">
-      <h3>Portfolio</h3>
+      <h3 class="portfolio-text">Portfolio</h3>
       <div class="portfolio-card-mobile">
         <div class="portfolio-left">
           <div class="card-1">
@@ -133,6 +216,37 @@
           </div>
         </div>
       </div>
+      <script></script>
+    </section>
+    <section class="footer" id="footer">
+      <div class="footer-component">
+        <div class="footer-text">
+          <h1>Interested to working with me?</h1>
+        </div>
+        <div class="footer-input">
+          <div class="input">
+            <label for="">Username</label>
+            <input type="text" class="inputBox" />
+          </div>
+          <div class="input">
+            <label for="">Email</label>
+            <input type="text" class="inputBox" />
+          </div>
+          <div class="input">
+            <label for="">LinkedIn</label>
+            <input type="text" class="inputBox" />
+          </div>
+          <div class="input">
+            <label for="">Comment</label>
+            <input type="text" class="comment" />
+          </div>
+          <a href="">Submit</a>
+        </div>
+      </div>
+      <p>
+        Copyright © 2022 UIHUT for UI Design & FakhriAthallah for Slicing all
+        rights reserved.
+      </p>
     </section>
   </body>
 </html>
