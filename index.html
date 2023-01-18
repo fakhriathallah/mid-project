@@ -17,32 +17,42 @@
   <body>
     <div class="header">
       <div class="text">
-        <h1>Hi, I'm <span>Fakhri Athallah</span></h1>
-        <p>I'm a Front End Developer</p>
-        <a href="#footer">Let's Talk</a>
+        <h1 class="name">Hi, I'm <span>Fakhri Athallah</span></h1>
+        <p class="description">I'm a Front End Developer</p>
+        <a href="#footer" class="btn-home">Let's Talk</a>
       </div>
+      <script>
+        ScrollReveal().reveal('.name', {
+          delay: 500,
+        });
+        ScrollReveal().reveal('.description', {
+          delay: 600,
+        });
+        ScrollReveal().reveal('.btn-home', {
+          delay: 700,
+        });
+      </script>
     </div>
     <section class="about-us">
       <div class="about-left">
         <h1>About Me</h1>
-        <img src="images/about-img.png" />
+        <img src="images/image-about.png" />
       </div>
       <div class="about-right">
         <p>
-          Design services I am providing. With best-in-class design and
-          engineering, my work maximizes value by putting your customers at the
-          center of everything I do.
+          Perkenalkan saya Fakhri Athallah, merupakan mahasiswa Universitas Bina
+          Nusarantara. Saya memiliki keahlian dalam pembuatan tampilan website.
         </p>
         <h1>Programming Language</h1>
         <div class="skill">
           <div class="skill-card-1">
-            <p>HTML</p>
+            <p style="font-size: 20px; font-weight: 600">HTML</p>
           </div>
           <div class="skill-card-2">
-            <p>CSS</p>
+            <p style="font-size: 20px; font-weight: 600">CSS</p>
           </div>
           <div class="skill-card-3">
-            <p>JAVASCRIPT</p>
+            <p style="font-size: 20px; font-weight: 600">JAVASCRIPT</p>
           </div>
         </div>
       </div>
@@ -62,11 +72,10 @@
     <section class="about-mobile">
       <div class="about-text">
         <h1>About Me</h1>
-        <img src="images/about-img.png" />
+        <img src="images/image-about.png" />
         <p>
-          Design services I am providing. With best-in-class design and
-          engineering, my work maximizes value by putting your customers at the
-          center of everything I do.
+          Perkenalkan saya Fakhri Athallah, merupakan mahasiswa Universitas Bina
+          Nusarantara. Saya memiliki keahlian dalam pembuatan tampilan website.
         </p>
       </div>
       <script>
@@ -81,13 +90,13 @@
         <h1 class="skill-text">Programming Language</h1>
         <div class="skill">
           <div class="skill-mobile-card-1">
-            <p>HTML</p>
+            <p style="font-size: 20px; font-weight: 600">HTML</p>
           </div>
           <div class="skill-mobile-card-2">
-            <p>CSS</p>
+            <p style="font-size: 20px; font-weight: 600">CSS</p>
           </div>
           <div class="skill-mobile-card-3">
-            <p>JAVASCRIPT</p>
+            <p style="font-size: 20px; font-weight: 600">JAVASCRIPT</p>
           </div>
         </div>
       </div>
@@ -243,6 +252,37 @@
           <a href="">Submit</a>
         </div>
       </div>
+      <p>
+        Copyright © 2022 UIHUT for UI Design & FakhriAthallah for Slicing all
+        rights reserved.
+      </p>
+    </section>
+    <section class="footer-mobile" id="footer">
+      <div class="footer-mobile-component">
+        <div class="footer-mobile-text">
+          <h1>Interested to working with me?</h1>
+        </div>
+        <div class="footer-mobile-input">
+          <div class="input-mobile">
+            <label for="">Username</label>
+            <input type="text" class="inputBox" />
+          </div>
+          <div class="input-mobile">
+            <label for="">Email</label>
+            <input type="text" class="inputBox" />
+          </div>
+          <div class="input-mobile">
+            <label for="">LinkedIn</label>
+            <input type="text" class="inputBox" />
+          </div>
+          <div class="input-mobile">
+            <label for="">Comment</label>
+            <input type="text" class="comment" />
+          </div>
+        </div>
+        <a href="">Submit</a>
+      </div>
+
       <p>
         Copyright © 2022 UIHUT for UI Design & FakhriAthallah for Slicing all
         rights reserved.
