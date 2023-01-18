@@ -15,24 +15,33 @@
 
 .header {
   width: 100%;
+  height: 100vh;
   text-align: center;
-  margin: 298px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 200px auto; */
+  /* background-color: red; */
 }
 
-.header h1 {
+.text {
+  background-color: #fff;
+}
+
+.text h1 {
   font-size: 60px;
 }
 
-.header h1 span {
+.text h1 span {
   color: var(--orange-font);
 }
 
-.header p {
+.text p {
   font-size: 32px;
   margin-bottom: 80px;
 }
 
-.header a {
+.text a {
   background-color: var(--purple-font);
   padding: 15px 35px;
   color: white;
@@ -40,10 +49,35 @@
   border-radius: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  .header {
+    /* background-color: red; */
+  }
+
+  .text h1 {
+    font-size: 30px;
+  }
+
+  .text p {
+    font-size: 16px;
+  }
+
+  .text a {
+    padding: 10px 25px;
+  }
+}
 .about-us {
   width: 100%;
-  padding: 10px 135px;
+  padding: 10px 250px;
   display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1400px) {
+  .about-us {
+    padding: 10px 100px;
+  }
 }
 
 .about-left {
@@ -55,7 +89,7 @@
 }
 
 .about-left img {
-  margin-top: 60px;
+  margin-top: 75px;
 }
 
 .about-right {
@@ -68,16 +102,17 @@
 }
 
 .about-right h1 {
-  margin-top: 61px;
+  margin-top: 40px;
   font-size: 60px;
 }
 
 .skill {
-  margin-top: 95px;
+  margin-top: 50px;
   overflow: hidden;
   display: flex;
-  gap: 60px;
+  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .skill-card-1 {
@@ -85,14 +120,19 @@
   position: relative;
   text-align: center;
   justify-content: center;
+  display: flex;
+  align-items: center;
   width: 150px;
   height: 200px;
   border-radius: 10px;
 }
 .skill-card-2 {
   background-color: var(--orange-font);
+  position: relative;
   text-align: center;
-  justify-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
   width: 150px;
   height: 200px;
   border-radius: 10px;
@@ -100,8 +140,11 @@
 
 .skill-card-3 {
   background-color: var(--yellow-font);
+  position: relative;
   text-align: center;
-  justify-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
   width: 150px;
   height: 200px;
   border-radius: 10px;
@@ -109,9 +152,238 @@
 
 .skill-card-4 {
   background-color: var(--green-font);
+  position: relative;
   text-align: center;
-  justify-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
   width: 150px;
   height: 200px;
   border-radius: 10px;
+}
+
+.about-mobile {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .about-us {
+    display: none;
+  }
+
+  .about-mobile {
+    display: flex;
+    /* background-color: red; */
+    margin: 0 30px;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-mobile h1 {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+  .about-mobile img {
+    margin-top: 20px;
+    width: 250px;
+  }
+
+  .about-mobile p {
+    margin-top: 20px;
+  }
+
+  .skill {
+    margin-top: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .skill-card-1 {
+    width: 300px;
+    height: 200px;
+  }
+  .skill-card-2 {
+    width: 300px;
+    height: 200px;
+  }
+  .skill-card-3 {
+    width: 300px;
+    height: 200px;
+  }
+  .skill-card-4 {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+.portfolio {
+  width: 100%;
+  padding: 100px 250px;
+  display: flex;
+  /* align-items: center; */
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.portfolio h3 {
+  text-align: center;
+  font-size: 60px;
+}
+
+.portfolio-card {
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.card-1 {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 38px;
+  background-color: var(--orange-font);
+  width: 570px;
+  height: 360px;
+  border-radius: 20px;
+}
+
+.card-1 p {
+  margin-top: 10px;
+}
+
+.card-1 img {
+  margin-top: 40px;
+}
+
+.card-2 {
+  margin-top: 17px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 38px;
+  background-color: var(--purple-font);
+  width: 570px;
+  height: 787px;
+  border-radius: 20px;
+}
+
+.card-2 p {
+  margin-top: 10px;
+}
+
+.card-2 img {
+  margin-top: 80px;
+}
+
+.card-3 {
+  margin-top: 17px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 38px;
+  background-color: var(--yellow-font);
+  width: 570px;
+  height: 530px;
+  border-radius: 20px;
+}
+
+.card-3 p {
+  margin-top: 10px;
+}
+
+.card-3 img {
+  margin-top: 60px;
+}
+
+.card-4 {
+  margin-top: 17px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 38px;
+  background-color: var(--orange-font);
+  width: 570px;
+  height: 510px;
+  border-radius: 20px;
+}
+
+.card-4 p {
+  margin-top: 10px;
+}
+
+.card-4 img {
+  margin-top: 60px;
+}
+
+.btn {
+  margin-top: 46px;
+}
+.portfolio-right a {
+  margin-top: 46px;
+  background-color: #0a0911;
+  color: #fff;
+  padding: 15px 35px;
+  border-radius: 10px;
+}
+
+.portfolio-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio {
+    display: none;
+  }
+  .portfolio-mobile {
+    margin-top: 50px;
+    display: block;
+    width: 100%;
+    padding: 100px 10px;
+    text-align: center;
+    /* align-items: center; */
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .portfolio-mobile h3 {
+    font-size: 30px;
+    margin: 50px;
+  }
+  .card-1 {
+    width: 100%;
+    height: 270px;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  .card-1 img {
+    margin-top: 60px;
+  }
+
+  .card-2 {
+    width: 100%;
+    height: 550px;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  .card-3 {
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  .card-4 {
+    width: 100%;
+    height: 270px;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  .card-4 img {
+    margin-top: 60px;
+  }
 }
