@@ -50,6 +50,9 @@
   border-radius: 10px;
 }
 
+.text a:hover {
+  background-color: #8c55ff;
+}
 @media screen and (max-width: 600px) {
   .text h1 {
     font-size: 30px;
@@ -61,6 +64,9 @@
 
   .text a {
     padding: 10px 25px;
+  }
+  .text a:hover {
+    background-color: #8c55ff;
   }
 }
 .about-us {
@@ -262,7 +268,7 @@
   margin-top: 40px;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .card-1 {
